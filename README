@@ -1,0 +1,42 @@
+A simple OCR using the gamma classifier, coded in MATLAB, the function ocr is compiled to create a COM component, that is implemented in a proyect using Visual Basic 2008 to create the GUI.
+
+The code has been designed for Windos OS, use the spell checker MS Office Word Activex to correct words.
+
+Can use the Alfa Beta SVM as classifier too.
+
+The component where the class ocrMain is implemented takes seven parameters, all are string datatype.
+
+string relacion: Is the parameter used to normalized the image of the characters, results of takes the cocient of the width/hight
+
+string patxclase: The number of patters per class that have the fundamental set or database
+
+string nclases: Number of classes in the database, the complete set of letters that could be recognized
+
+string umbralinc: An integer used to improve the performance, while the image is binarized
+
+string altoinc: The incremente used to take the height-average in all the textlines contained on the image.
+
+string normalto: The height of the normalized image crop that contains the character
+
+string normanchi: The width of the normalized image crop that contains the character
+
+string ruta: The path to the image to recognize
+
+string salida: The path to the salida.txt file, with the text recognized
+
+string base: Name of the database for the classifier, use some of the csv files in the repo
+
+Use this values for the best performance on the recognition
+
+relacion="1.3"
+patxclase="6"
+nclases="80"
+umbralinc="17"
+altoinc="8"
+normalto="40"
+normancho="29"
+ruta="path to the image input file"
+salida="path to the output file"
+base="courierarial40x29.csv" 
+
+This code has been created by Jesus Lopez. 
