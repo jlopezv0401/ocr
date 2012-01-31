@@ -1,6 +1,6 @@
 A simple OCR using the gamma classifier, coded in MATLAB, the function ocr is compiled to create a COM component, that is implemented in a proyect using Visual Basic 2008 to create the GUI.
 
-The code has been designed for Windos OS, use the spell checker MS Office Word Activex to correct words.
+The code has been designed for Windos OS, using the spell checker MS Office Word Activex to correct words, it needs MS Office installed.
 
 Can use the Alfa Beta SVM as classifier too.
 
@@ -38,5 +38,7 @@ normancho="29"
 ruta="path to the image input file"
 salida="path to the output file"
 base="courierarial40x29.csv" 
+
+To compile the COM component use the .prj file on the Matlab Compiler.
 
 This code has been created by Jesus Lopez. 
